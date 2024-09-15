@@ -4,6 +4,89 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TOP | Sign Up Form</title>
+
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="main-container">
+      <div class="logo-container">
+        <div class="logo-card">
+          <img src="image/odin-logo.png" alt="odin-logo" />
+          <h1>ODIN</h1>
+        </div>
+
+        <p class="logo-footer">
+          Photo by
+          <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on
+          <a href="https://unsplash.com">Unsplash</a>
+        </p>
+      </div>
+      <div class="form-container">
+        <div class="description">
+          <p>
+            This is not a real online service! You need something like this in
+            your life to help you realize your deepest dreams.
+            <br />
+            Sign up <em>now</em> to get started.
+          </p>
+          <p>You <em>know</em> you want to.</p>
+        </div>
+
+        <form action="#">
+          <div class="input-section">
+            <h2>Let's do this!</h2>
+
+            <div class="input-container">
+              <div class="form-group">
+                <label for="firstname">FIRST NAME</label>
+                <input type="text" id="firstname" name="firstname" />
+              </div>
+
+              <div class="form-group">
+                <label for="lastname">LAST NAME</label>
+                <input type="text" id="lastname" name="lastname" />
+              </div>
+
+              <div class="form-group">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email" />
+              </div>
+
+              <div class="form-group">
+                <label for="phonenumber">PHONE NUMBER</label>
+                <input type="tel" id="phonenumber" name="phonenumber" />
+              </div>
+
+              <div class="form-group">
+                <label for="password">PASSWORD</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  pattern=".{8,}"
+                  title="* Passwords do not match"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="confirmpassword">CONFIRM PASSWORD</label>
+                <input
+                  type="password"
+                  id="confirmpassword"
+                  name="confirmpassword"
+                  pattern=".{8,}"
+                  title="Passwords do not match"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="create-signup">
+            <button type="submit">Create Account</button>
+            <p>Already have an account?<a> Log in</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
