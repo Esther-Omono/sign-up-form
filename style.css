@@ -1,1 +1,150 @@
-/* style.css */
+@font-face {
+    font-family: "Norse-Bold";
+    src: url(font/Norse-Bold.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container {
+    display: flex;
+    height: 100vh;
+}
+
+.logo-container {
+    flex: 1;
+    background-image: url(image/green-leaves.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.logo-card {
+    height: 110px;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 120px;
+    font-size: 2rem;
+    color: #fff;
+    font-family: "Norse-Bold", sans-serif;
+}
+
+.logo-card img {
+    height: 80px;
+    width: 60px;
+}
+
+.logo-footer {
+    position: absolute;
+    bottom: 20px;
+    left: 130px;
+    color: #fff;
+    font-size: 0.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo-footer > a {
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-container {
+    flex: 2;
+    background-color: #f8f8f8;
+    padding-top: 50px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 50px 30px 50px;
+}
+
+.description p {
+    font-weight: bold;
+}
+
+.input-section {
+    background-color: #ffffff; 
+    padding: 15px 50px;
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);
+}
+
+.input-section h2 {
+    font-size: 1rem;
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 600px;
+    margin-top: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    margin-bottom: 10px;
+}
+
+input {
+  padding: 5px;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  outline: none;
+}
+
+input:focus {
+    border-color: blue;
+    border-width: 2px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+input:invalid {
+    border-width: 2px;
+    border-color: red;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+.create-signup {
+    padding: 20px 50px;
+}
+
+.create-signup button {
+    background-color: #596d48;
+    padding: 10px 48px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.create-signup p {
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.create-signup p a {
+    color: #596d48;
+}
